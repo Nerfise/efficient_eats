@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+* {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+.caligraphy-home {
+  font-family: 'Times new Roman', sans-serif;
+}
+
+.caligraphy-work {
+  font-family: 'Times new Roman', sans-serif;
+}
+
+.caligraphy-education {
+  font-family: 'Times new Roman', sans-serif;
+}
+
+
+
+
+
+.gradient-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #E63946, #ff4500, #e00404, #E63946, #fc4e4e,#e00404);
+  animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
